@@ -1,0 +1,27 @@
+
+{
+  "tisseo": {
+    "vehicules": [
+      {
+        "vin": "VF7VDF555AA569100",
+        "type": "metro"
+      },
+      {
+        "vin": "VF7VDA55662202434",
+        "type": "tramway"
+      }
+    ],
+    "parameters": {
+      "general": {
+        "timeToGenerate": 2000,
+        "nbrOfTramAtOnce": 5
+      },
+      "metro": {
+        "rangePnb": [0, 100]
+      },
+      "tramway": {
+        "rangePnb": [0, 100]
+      }
+    }
+  }
+}
