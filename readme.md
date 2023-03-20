@@ -1,5 +1,5 @@
 # Simulate Toulouse's Vehicules Route
-|readme.md|[config Documentation](./configDocumentation)|
+|readme.md|[config Documentation](./configDocumentation.md)|
 |---|---|
 
 
