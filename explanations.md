@@ -1,7 +1,9 @@
+|[readme.md](./readme.md)|[config Documentation](./configDocumentation.md)|explanations|
+|---|---|---|
 # Program Behavior
 This program simulates a fleet of vehicles sending data to an MQTT broker. The program generates vehicle objects with randomly generated data and sends the data frames to the broker.
 
-High-Level Overview
+# High-Level Overview
 The program can be divided into two main parts: the simulation generator and the MQTT broker connection.
 
 The simulation generator is responsible for generating the vehicles and sending their data frames to the broker. The program generates a list of available vehicles and loops through them until there are no more vehicles left. The generator selects a random vehicle from the available list, generates its data frame, and sends it to the MQTT broker. The generator then removes the selected vehicle from the available list and continues looping until there are no more vehicles left.
