@@ -1,26 +1,44 @@
 
 {
-  "tisseo": {
-    "vehicules": [
-      {
-        "vin": "VF7VDF555AA569100",
-        "type": "metro"
+  "mqtt": {
+    "url" : "mqtt://localhost:1883/",
+    "topic": "vehicules"
+  },
+  "companies": {
+    "tisseo": {
+      "vehicules": {
+        "metro": ["VF7VDF555AA569100"],
+        "tramway": ["VF7VDA55662202434"],
+        "bus": ["VF7VDA550000000"]
       },
-      {
-        "vin": "VF7VDA55662202434",
-        "type": "tramway"
-      }
-    ],
-    "parameters": {
-      "general": {
-        "timeToGenerate": 2000,
-        "nbrOfTramAtOnce": 5
-      },
-      "metro": {
-        "rangePnb": [0, 100]
-      },
-      "tramway": {
-        "rangePnb": [0, 100]
+      "parameters": {
+        "vehiculesDefaultParameters": {
+          "maxSpeed": 80,
+          "maxCapacity": 500,
+          "nbrOfStops": 5,
+          "protocol": "generalProtocol",
+          "baseConsPer100Km": 3,
+          "latencyBetweenFrames": 3000,
+          "numberOfFrameLoops": 1
+        },
+        "vehiculeParametersByType": {
+          "metro": {
+            "nbrOfStops": 14,
+            "MaxCapacity": 600,
+            "maxSpeed": 80
+          },
+          "tramway": {
+            "nbrOfStops": 30,
+            "MaxCapacity": 500,
+            "protocol": "alstom",
+            "maxSpeed": 80
+          },
+          "bus" : {
+            "nbrOfStops": 30,
+            "MaxCapacity": 500,
+            "maxSpeed": 110
+          }
+        }
       }
     }
   }
