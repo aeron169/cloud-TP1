@@ -32,4 +32,18 @@ npm start
  :warning: <b>Note:</b> This application requires Node.js and an MQTT broker with default settings to be installed on the system.
 
 ## Configuration
-A configuration file is needed for this application and should be at the root of the repo. The file contains information about the available vehicules and their parameters, you can see how to write this file in the documentation of it.
+The configuration file is a JSON file located at the root of the repository. It contains the following properties:
+
+- mqtt: Information about the MQTT broker.
+   - url: The URL of the MQTT broker.
+   - topic: The topic to which messages will be sent.
+- companies: Information about the available companies.
+  - {company_name}: Information about a specific company.
+    - vehicules: Information about the available vehicles for this company.
+          - {vehicle_type}: An array of vehicle VINs for this vehicle type.
+   - parameters: Information about the parameters for the vehicles of this company.
+     - vehiculesDefaultParameters: Default parameters for all vehicles.
+     - vehiculeParametersByType: Parameters for specific vehicle types.
+
+
+Refer to the documentation for more information on how to write the configuration file.
