@@ -1,5 +1,5 @@
 # Simulate Toulouse's Vehicules Route
-This is a Node.js application that generates random (not so) routes for Tisseo vehicules and sends them to a message broker. It uses the MQTT protocol to communicate with the broker and has been designed to work with a broker running on localhost with the default port.
+This is a Node.js application that generates random (not so) routes for Tisseo vehicules and sends them to a message broker. It uses the MQTT protocol to communicate with the broker.
 
 ## Requirements
 Node.js
@@ -11,7 +11,7 @@ To use this application, follow these steps:
 #### 1. Clone the repository
 
 ```sh
-git clone https://github.com/your_username/tisseo-vehicule-route-generator.git
+git clone https://github.com/your_username/cloud-TP1.git
 ```
 
 #### 2. Navigate to the project directory and install dependencies
