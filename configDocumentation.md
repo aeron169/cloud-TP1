@@ -1,7 +1,7 @@
 # Config File Documentation  📝
 
-|[readme.md](./readme.md)|config Documentation|
-|---|---|
+|[readme.md](./readme.md)|config Documentation| [explanations](./explanations.md)|
+|---|---|---|
 
 
 This documentation **provides details** about the structure of the configuration file used in this project.
